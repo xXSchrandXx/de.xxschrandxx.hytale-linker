@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.4/page.xsd">
+	<import>
+		<page identifier="de.xxschrandxx.wsc.HytaleUserListPage">
+			<pageType>system</pageType>
+			<controller>wcf\page\HytaleUserListPage</controller>
+			<name language="de">Hytale-Identitäten</name>
+			<name language="en">Hytale Identities</name>
+			<permissions>user.hytaleLinker.canManage</permissions>
+			<options>HYTALE_LINKER_ENABLED,HYTALE_LINKER_IDENTITY</options>
+			<content language="en">
+				<title>Hytale Identities</title>
+			</content>
+			<content language="de">
+				<title>Hytale-Identitäten</title>
+			</content>
+		</page>
+		<page identifier="de.xxschrandxx.wsc.HytaleUserAddForm">
+			<pageType>system</pageType>
+			<controller>wcf\form\HytaleUserAddForm</controller>
+			<name language="de">Hytale-Identität hinzufügen</name>
+			<name language="en">Add Hytale Identity</name>
+			<permissions>user.hytaleLinker.canManage</permissions>
+			<options>HYTALE_LINKER_ENABLED,HYTALE_LINKER_IDENTITY</options>
+			<content language="en">
+				<title>Add Hytale Identity</title>
+			</content>
+			<content language="de">
+				<title>Hytale-Identität hinzufügen</title>
+			</content>
+		</page>
+	</import>
+</data>

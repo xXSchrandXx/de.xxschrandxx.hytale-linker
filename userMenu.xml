@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/userMenu.xsd">
+	<import>
+		<usermenuitem name="wcf.user.menu.hytaleSection">
+			<showorder>2</showorder>
+			<iconclassname>fa-address-book</iconclassname>
+			<permissions>user.hytaleLinker.canManage</permissions>
+			<options>hytale_linker_enabled,hytale_linker_identity</options>
+		</usermenuitem>
+		<usermenuitem name="wcf.user.menu.hytaleSection.hytaleUserList">
+			<controller><![CDATA[wcf\page\HytaleUserList]]></controller>
+			<parent>wcf.user.menu.hytaleSection</parent>
+			<showorder>1</showorder>
+			<permissions>user.hytaleLinker.canManage</permissions>
+			<options>hytale_linker_enabled,hytale_linker_identity</options>
+		</usermenuitem>
+	</import>
+</data>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/eventListener.xsd">
+	<import>
+		<eventlistener name="userEditHytaleAdmin">
+			<eventclassname>wcf\acp\form\UserEditForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\HytaleACPUserEditListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="userExportGdprHytaleLinker">
+			<eventclassname>wcf\acp\action\UserExportGdprAction</eventclassname>
+			<eventname>export</eventname>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\HytaleLinkerExportGdprActionListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>

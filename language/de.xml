@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="de"
+	xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/language.xsd">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.hytaleLinker.canManage"><![CDATA[Kann Hytale-Linker verwalten]]></item>
+		<item name="wcf.acp.group.option.user.hytaleLinker.canManage"><![CDATA[Kann Hytale-Linker verwenden]]></item>
+		<item name="wcf.acp.group.option.user.hytaleLinker.mandatory"><![CDATA[Hytale-Linker verpflichtend]]></item>
+		<item name="wcf.acp.group.option.user.hytaleLinker.mandatory.description"><![CDATA[Wenn aktiviert, wird der Benutzer bei fehlender Hytale-Linker Verknüpfung und aktiver <kbd>{'wcf.acp.option.hytale_enable_disable_user'|language}</kbd> Option deaktiviert.]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.hytale_linker"><![CDATA[Hytale-Linker]]></item>
+		<item name="wcf.acp.option.category.hytale_linker_general"><![CDATA[Allgemeine Einstellungen]]></item>
+		<item name="wcf.acp.option.hytale_linker_enabled"><![CDATA[Hytale-Linker aktivieren]]></item>
+		<item name="wcf.acp.option.hytale_linker_enabled.description"><![CDATA[<p>Aktiviert / Deaktiviert Hytale-Linker.</p>
+<p>Links für Plugin-Konfiguration:</p>
+<p><kbd>sendCode: {link controller='HytaleLinkerCode' forceFrontend=true}{/link}</kbd></p>
+<p><kbd>updateNames: {link controller='HytaleLinkerUpdateName' forceFrontend=true}{/link}</kbd></p>
+<p><kbd>getLinked: {link controller='HytaleLinkerGetLinked' forceFrontend=true}{/link}</kbd></p>
+<p><kbd>getUnlinked: {link controller='HytaleLinkerGetUnlinked' forceFrontend=true}{/link}</kbd></p>]]></item>
+		<item name="wcf.acp.option.hytale_linker_identity"><![CDATA[Server]]></item>
+		<item name="wcf.acp.option.hytale_linker_identity.description"><![CDATA[Aktiviert Hytale-Linker für ausgewählte Server.]]></item>
+		<item name="wcf.acp.option.hytale_max_uuids"><![CDATA[Maximale Anzahl an Hytale-Verknüpfungen pro Benutzer]]></item>
+		<item name="wcf.acp.option.suffix.mc_uuids"><![CDATA[Verknüpfungen]]></item>
+		<item name="wcf.acp.option.hytale_enable_active_user"><![CDATA[Benutzer aktivieren]]></item>
+		<item name="wcf.acp.option.hytale_enable_active_user.description"><![CDATA[<p>Aktiviert einen Benutzer wenn er eine Hytale-Linker Verknüpfung hinzugefügt hat.</p>
+<p>Damit diese Option richtig funktioniert muss die Option <kbd>{'wcf.acp.option.register_activation_method'|language}</kbd> auf <kbd>{'wcf.acp.option.register_activation_method.byAdmin'|language}</kbd> oder <kbd>{'wcf.acp.option.register_activation_method.byUserAndAdmin'|language}</kbd> gesetzt sein.</p>
+<p>Es ist empfehlenswert die Texte <kbd>wcf.user.register.needAdminActivation</kbd>, <kbd>wcf.user.register.success.awaitActivation</kbd> und <kbd>wcf.user.registerActivation.success.awaitAdminActivation</kbd> anzupassen.</p>]]></item>
+		<item name="wcf.acp.option.hytale_enable_disable_user"><![CDATA[Benutzer deaktivieren]]></item>
+		<item name="wcf.acp.option.hytale_enable_disable_user.description"><![CDATA[<p>Deaktiviert einen Benutzer, wenn er keine Hytale-Linker Verknüpfung mehr vorhanden ist.</p>
+<p>Administratoren, sowie Benutzer mit der Berechtigung <kbd>{'wcf.acp.group.option.user.hytaleLinker.mandatory'|language}</kbd> werden nicht deaktivert.</p>]]></item>
+	</category>
+	<category name="wcf.acp.form">
+		<item name="wcf.acp.form.hytaleUserAdd.formTitle.add"><![CDATA[Hytale-Verknüpfung Hinzufügen]]></item>
+		<item name="wcf.acp.form.hytaleUserAdd.formTitle.edit"><![CDATA[Hytale-Verknüpfung Bearbeiten]]></item>
+		<item name="wcf.acp.form.hytaleUserAdd.hytaleName"><![CDATA[Name]]></item>
+		<item name="wcf.acp.form.hytaleUserAdd.hytaleName.description"><![CDATA[Der Name des Spielers.]]></item>
+		<item name="wcf.acp.form.hytaleUserAdd.hytaleUUID"><![CDATA[UUID]]></item>
+		<item name="wcf.acp.form.hytaleUserAdd.hytaleUUID.description"><![CDATA[Die UUID des Spielers.]]></item>
+		<item name="wcf.acp.form.hytaleUserAdd.hytaleUUID.error.alreadyUsed"><![CDATA[Hytale UUID wird schon verwendet.]]></item>
+		<item name="wcf.acp.form.hytaleUserAdd.hytaleUUID.error.notUUID"><![CDATA[{$uuid} ist keine gültige UUID v4.]]></item>
+	</category>
+	<category name="wcf.acp.page">
+		<item name="wcf.acp.page.userAddSection.hytale.add"><![CDATA[Hytale-Verknüpfung Hinzufügen]]></item>
+		<item name="wcf.acp.page.userAddSection.hytale.connectedSince"><![CDATA[Verknüpft]]></item>
+		<item name="wcf.acp.page.userAddSection.hytale.sectionTitle"><![CDATA[Hytale-Verknüpfungen]]></item>
+		<item name="wcf.acp.page.userAddSection.hytale.hytaleUUID"><![CDATA[Hytale-UUID]]></item>
+		<item name="wcf.acp.page.userAddSection.hytale.hytaleName"><![CDATA[Hytale-Name]]></item>
+	</category>
+	<category name="wcf.copyright">
+		<item name="wcf.copyright.hytale-linker"><![CDATA[xXSchrandXx's Hytale-Linker]]></item>
+	</category>
+	<category name="wcf.form.hytaleUserAdd">
+		<item name="wcf.form.hytaleUserAdd.error.maxReached"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Sie haben{else}Du hast{/if} das maximum an Verknüpfungen erreicht.]]></item>
+		<item name="wcf.form.hytaleUserAdd.error.noUnknownUsers"><![CDATA[<p>Es sind keine Verknüpfungsanfragen vorhanden.</p>
+<p>Benutze auf dem Hytale-Server den Befehl <kbd>/wsclinker</kbd>.</p>]]></item>
+		<item name="wcf.form.hytaleUserAdd.hytaleUserID"><![CDATA[Hytale-UUID]]></item>
+		<item name="wcf.form.hytaleUserAdd.hytaleUserID.description"><![CDATA[Damit {if LANGUAGE_USE_INFORMAL_VARIANT}Sie{else}du{/if} in der Liste angezeigt {if LANGUAGE_USE_INFORMAL_VARIANT}werden, müssen Sie{else}wirst, musst du{/if} auf dem Hytale-Server den Befehl <kbd>/wsclinker</kbd> verwenden.]]></item>
+		<item name="wcf.form.hytaleUserAdd.code"><![CDATA[Bestätigungscode]]></item>
+		<item name="wcf.form.hytaleUserAdd.code.description"><![CDATA[Der Bestätigungscode, der {if LANGUAGE_USE_INFORMAL_VARIANT}Ihnen{else}dir{/if} auf dem Hytale-Server zugesendet wurde.]]></item>
+		<item name="wcf.form.hytaleUserAdd.code.error.wrongSecurityCode"><![CDATA[Falscher Bestätigungscode.]]></item>
+		<item name="wcf.form.hytaleUserAdd.code.error.alreadyUsed"><![CDATA[Hytale UUID wird schon verwendet.]]></item>
+	</category>
+	<category name="wcf.page.hytaleUserList">
+		<item name="wcf.page.hytaleUserList.add"><![CDATA[Hytale-Verknüpfung hinzufügen]]></item>
+		<item name="wcf.page.hytaleUserList.table.hytaleUUID"><![CDATA[UUID]]></item>
+		<item name="wcf.page.hytaleUserList.table.hytaleName"><![CDATA[Name]]></item>
+		<item name="wcf.page.hytaleUserList.table.createdDate"><![CDATA[Verknüpft]]></item>
+	</category>
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.conditionGroup.hytale"><![CDATA[Hytale-Linker]]></item>
+		<item name="wcf.user.condition.hytaleLinker.isLinked"><![CDATA[Ist verknüft.]]></item>
+		<item name="wcf.user.condition.hytaleLinker.hytaleLinked"><![CDATA[Hytale Verknüpfungen]]></item>
+		<item name="wcf.user.condition.hytaleLinker.uuid"><![CDATA[UUID]]></item>
+		<item name="wcf.user.condition.hytaleLinker.uuid.description"><![CDATA[Ist mit der angegebenden UUID verknüpft.]]></item>
+	</category>
+	<category name="wcf.user.menu">
+		<item name="wcf.user.menu.hytaleSection"><![CDATA[Hytale]]></item>
+		<item name="wcf.user.menu.hytaleSection.hytaleUserList"><![CDATA[Hytale-Verknüpfungen]]></item>
+	</category>
+</language>
