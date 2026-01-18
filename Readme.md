@@ -11,5 +11,7 @@ It does not matter whether `online-mode` is activated or deactivated. The user w
 1. [Hytale-API](#links) installed on WoltLab.
 2. [WSC-Hytale-Bridge](#links) installed on your Bukkit- / Spigot- / BungeeCord-Server.
 # Links
-## Donate
 * [PayPal](https://www.paypal.com/donate/?hosted_button_id=RFYYT7QSAU7YJ)
+* [GitHub](https://github.com/xXSchrandXx?tab=repositories)
+* [Plugins von WoltLab](https://www.woltlab.com/pluginstore/user-file-list/1503877-xxschrandxx/)
+* [Plugins von SpigotMC](https://www.spigotmc.org/resources/authors/_xxschrandxx_.228634/)
